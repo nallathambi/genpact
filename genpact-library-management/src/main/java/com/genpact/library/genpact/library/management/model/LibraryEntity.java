@@ -26,8 +26,8 @@ public class LibraryEntity {
 	@Column(name = "address")
 	private String address;
 	
-	@OneToMany(cascade=CascadeType.ALL, mappedBy ="id" )    
-	private List<BookEntity> books;
+	/*@OneToMany(cascade=CascadeType.ALL, mappedBy ="id" )    
+	private List<BookEntity> books;*/
 	
 	/*@Override
 	public String toString() {
@@ -70,13 +70,13 @@ public class LibraryEntity {
 		this.address = address;
 	}
 
-	public List<BookEntity> getBooks() {
+	/*public List<BookEntity> getBooks() {
 		return books;
 	}
 
 	public void setBooks(List<BookEntity> books) {
 		this.books = books;
-	}
+	}*/
 
 		
 

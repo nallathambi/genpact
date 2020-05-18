@@ -65,7 +65,7 @@ public class LibraryServiceImpl implements LibraryService{
         	newEntity.setAddress(entity.getAddress());
         	newEntity.setName(entity.getName());
         	//entity.getBooks().get(0).setId((long)9709876);
-        	newEntity.setBooks(entity.getBooks()); 
+        	//newEntity.setBooks(entity.getBooks()); 
         	newEntity.setID(entity.getID());
             newEntity = libraryRepository.save(newEntity);
             return newEntity;

@@ -27,9 +27,9 @@ public class BookEntity implements Serializable {
 	@Column(name = "ISBN")
 	private Long ISBN;
 	
-	@ManyToOne(cascade = CascadeType.ALL,fetch= FetchType.LAZY)
+	/*@ManyToOne(cascade = CascadeType.ALL,fetch= FetchType.LAZY)
 	@JoinColumn(name = "id",nullable=true,insertable=false,updatable=false)
-	private LibraryEntity library;
+	private LibraryEntity library;*/
 
 	@Column(name = "title")
 	private String title;
@@ -123,13 +123,13 @@ public class BookEntity implements Serializable {
 		this.id = id;
 	}
 
-	public LibraryEntity getLibrary() {
+	/*public LibraryEntity getLibrary() {
 		return library;
 	}
 
 	public void setLibrary(LibraryEntity library) {
 		this.library = library;
 	}
-	
+	*/
 
 }
